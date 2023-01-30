@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伏見稲荷大社 | 祭礼・行事</title>
+    <link rel="website icon" type="png" href="./image/design.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="./js/cookie.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="nav-wrapper">
+            <div class="logo"><a href="./index.html"><img src="./image/スクリーンショット 2022-12-21 10.47.03.png" alt=""></a>
+            </div>
+            <nav>
+                <div class="btn-lang">
+                    <a href="./event.html" id="enbt" data-siteview="en" class="en">EN</a> / <a href="./event.html"
+                        id="jpbt" data-siteview="jp" class="jp">JP</a>
+                </div>
+                <div class="sp_none">
+                    <a href="./index.html#kanko" class="content-jp">観光名所</a>
+                    <a href="./index.html#kanko" class="content-en">Tourist Attraction</a>
+                </div>
+                <div class="sp_none">
+                    <a href="./event.html" class="content-jp">祭礼・行事</a>
+                    <a href="./event.html" class="content-en">Events</a>
+                </div>
+                <div class="sp_none">
+                    <a href="./news.html" class="content-jp">お知らせ</a>
+                    <a href="./news.html" class="content-en">Notice</a>
+                </div>
+                <div class="sp_none">
+                    <a href="./access.html" class="content-jp">アクセス</a>
+                    <a href="./access.html" class="content-en">Access</a>
+                </div>
+                <div class="sp_none">
+                    <a href="./form.html" class="content-jp">お問い合わせ</a>
+                    <a href="./form.html" class="content-en">Contact us</a>
+                </div>
+            </nav>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="globalMenuSp">
+            <ul>
+                <li><a href="./index.html#kanko" class="ham_bt content-jp">観光名所</a></li>
+                <li><a href="./index.html#kanko" class="ham_bt content-en">Tourist Attraction</a></li>
+                <li><a href="./event.html" class="ham_bt content-jp">祭礼・行事</a></li>
+                <li><a href="./event.html" class="ham_bt content-en">Event</a></li>
+                <li><a href="./index.html#news" class="ham_bt content-jp">お知らせ</a></li>
+                <li><a href="./index.html#news" class="ham_bt content-en">Notice</a></li>
+                <li><a href="./access.html" class="ham_bt content-jp">アクセス</a></li>
+                <li><a href="./access.html" class="ham_bt content-en">Access</a></li>
+                <li><a href="./form.html" class="ham_bt content-jp">お問い合わせ</a></li>
+                <li><a href="./form.html" class="ham_bt content-en">Contact us</a></li>
+                <li><a href="./index.html" class="ham_bt content-jp">プライバシーポリシー</a></li>
+                <li><a href="./index.html" class="ham_bt content-en">Privacy Policy</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="e-topimg">
+        <img src="./image/e-topimg.jpg" alt="">
+        <h1 class="content-jp">祭礼・行事</h1>
+        <h1 class="content-en">Festivals and Events</h1>
+    </div>
+
+    <div class="bt-wrapper">
+        <ul class="bt-month">
+            <button type=" button" class="bt-item bt_jan content-jp">1月</button>
+            <button type=" button" class="bt-item bt_jan content-en">Jan.</button>
+            <button type=" button" class="bt-item bt_feb content-jp">2月</button>
+            <button type=" button" class="bt-item bt_feb content-en">Feb.</button>
+            <button type=" button" class="noevent bt_mar content-jp">3月</button>
+            <button type=" button" class="noevent bt_mar content-en">Mar.</button>
+            <button type=" button" class="bt-item bt_apr content-jp">4月</button>
+            <button type=" button" class="bt-item bt_apr content-en">Apr.</button>
+            <button type=" button" class="bt-item bt_may content-jp">5月</button>
+            <button type=" button" class="bt-item bt_may content-en">May.</button>
+            <button type=" button" class="bt-item bt_jun content-jp">6月</button>
+            <button type=" button" class="bt-item bt_jun content-en">Jun.</button>
+            <button type=" button" class="bt-item bt_jul content-jp">7月</button>
+            <button type=" button" class="bt-item bt_jul content-en">Jul.</button>
+            <button type=" button" class="noevent bt_aug content-jp">8月</button>
+            <button type=" button" class="noevent bt_aug content-en">Aug.</button>
+            <button type=" button" class="noevent bt_sep content-jp">9月</button>
+            <button type=" button" class="noevent bt_sep content-en">Sep.</button>
+            <button type=" button" class="bt-item bt_oct content-jp">10月</button>
+            <button type=" button" class="bt-item bt_oct content-en">Oct.</button>
+            <button type=" button" class="bt-item bt_nov content-jp">11月</button>
+            <button type=" button" class="bt-item bt_nov content-en">Nov.</button>
+            <button type=" button" class="bt-item bt_dec content-jp">12月</button>
+            <button type=" button" class="bt-item bt_dec content-en">Dec.</button>
+        </ul>
+    </div>
+
+    <section class=" event-wrapper">
+        <div class="event_item_wrapper jan">
+            <h2 class="event-title content-jp">歳旦祭</h2>
+            <h2 class="event-title content-en">Saitan-sai</h2>
+            <p class="e-date content-jp">1月1日</p>
+            <p class="e-date content-en">January 1</p>
+            <p class="timeplace content-jp">6:00 ~ / 本殿</p>
+            <p class="timeplace content-en">6:00 A.M. ~ / Main Shrine</p>
+            <p class="e-detail content-jp">
+                名立たる京都市内の寺院の中でも、初詣先として屈指の人気を誇るのが伏見稲荷大社です。正月三が日の参拝者はなんと、約277万人と全国でもトップクラスです。多くの人でにぎわう伏見稲荷大社で、元旦の朝6時から行われるのが「歳旦祭（さいたんさい）」です。この祭は新年を寿ぎ国家の安泰と一年の無事平穏を祈るお祭で、祭典が終わると宮司以下の神職は境内にある各摂末社を巡拝し、続いて社務所正庁の間で新年拝賀式を行います。なお、当日は大変な混雑が予想されるため、公共交通機関での移動をお勧めいたします。
+            </p>
+            <p class="e-detail content-en">Among the famous temples in Kyoto, Fushimi Inari Taisha is one of the most
+                popular Hatsumode destinations.<br>On the first three days of the New Year, the shrine attracts an
+                astonishing 2.77 million worshippers, one of the highest numbers in Japan.<br>The "Saitan-sai" is held
+                on New Year's Day from 6:00 a.m. at Fushimi Inari Taisha, which is crowded with many visitors.<br>After
+                the ceremony is over, the priests make a pilgrimage to each of the shrines on the shrine grounds,
+                followed by the New Year's Prayer Ceremony in the main shrine office.<br>Since the festival is expected
+                to be very crowded on the day of the ceremony, public transportation is recommended.</p>
+        </div>
+        <div class="event_item_wrapper jan">
+            <h2 class="event-title content-jp">大山祭</h2>
+            <h2 class="event-title content-en">Oyama-sai</h2>
+            <p class="e-date content-jp">1月5日</p>
+            <p class="e-date content-en">January 5</p>
+            <p class="timeplace content-jp">「本殿の儀」 12:00 ~ / 本殿</p>
+            <p class="timeplace content-jp">「山上の儀」 13:30 ~ / 御膳谷祈祷殿</p>
+            <p class="timeplace content-en">「Shrine Ceremony」 12:00 P.M. ~ / Main Shrine</p>
+            <p class="timeplace content-en">「Mountaintop Ceremony」 1:30 P.M. ~ / Gozendani Kitoden prayer building</p>
+            <p class="e-detail content-jp">
+                毎年1月5日、伏見稲荷大社では「大山祭（おおやまさい）」が催され、稲荷山七神蹟の外玉垣に注連縄を張る注連張神事が行われます。その昔、御膳谷に御饗殿と御竈殿があって、お祭りには御饌石と呼ばれる霊石の上に神饌をお供えしたという故事に基づくものです。本殿祭のあと、宮司以下祭員・参列者は揃ってお山御膳谷に向かい、斎土器と呼ばれるかわらけに中汲酒を盛ったものを御饌石の上に供えて、五穀豊穣と家業繁栄を祈る祭りが行われます。
+            </p>
+            <p class="e-detail content-en">Every year on January 5, Fushimi Inari Taisha holds the "Oyama-sai", in which
+                a shimenawa (sacred rope) is tied around the outer tamagaki fence of the seven sacred sites on
+                Mt.<br>This ceremony is based on a legend that in ancient times, there were a feast hall and a cooking
+                stove hall in the Gozen Valley, and that during the festival, offerings were made on a sacred stone
+                called the Gosai-ishi.<br>After the Honden Festival, all priests and attendants go to the Oyama
+                Gozendani to offer a straw container called sai-doki with sake inside on the Gozenishi to pray for a
+                good harvest and prosperity of the family business.</p>
+        </div>
+        <div class="event_item_wrapper jan">
+            <h2 class="event-title content-jp">成年祭</h2>
+            <h2 class="event-title content-en">Seinen-sai</h2>
+            <p class="e-date content-jp">1月成人の日</p>
+            <p class="e-date content-en">January Coming of Age Day</p>
+            <p class="timeplace content-jp">13:00 ~ / 本殿</p>
+            <p class="timeplace content-en">1:00 P.M. ~ / Main Shrine</p>
+            <p class="e-detail content-jp">
+                毎年成人の日に行われる「成年祭」は崇敬者の中の成人に達した男女を招いて、今後の人生に大神のご加護があるようにと祈られます。この式は、昔の元服式を見直すことで新成人の自覚や責任を促そうと、1957年から毎年行われています。祭典の後には、参集殿ポールにて公家や武家、町人の時代衣装を身に纏い、髪そりなどの時代ごとの儀式「元服式」と、平安時代姫の裳着・鬢批の儀（成人式）が披露されます。十二単の着装実演や少年の剃髪が行われると参拝客からは歓声が漏れ、古式ゆかしい元服式の様子を大いに楽しんでいました。
+            </p>
+            <p class="e-detail content-en">The "Coming of Age Ceremony," held annually on Coming of Age Day, invites men
+                and women who have reached adulthood among the worshippers to pray for the blessings of the Great God
+                for the rest of their lives.<br>This ceremony has been held annually since 1957 in an effort to promote
+                awareness and responsibility among new adults by reviewing the old Genpuku ceremony.<br>After the
+                ceremony, the "Genpuku Ceremony," a period-specific ceremony in which the participants wear period
+                costumes of court nobles, samurai, and merchants and shave their hair, and the "Coming-of-Age Ceremony,"
+                in which the participants wear Heian-period princess costumes and perform the Bikkiri ceremony
+                (coming-of-age ceremony) are performed at the Sanguden pole.<br>When the demonstration of wearing
+                juni-hitoe (12-layered kimono) and the shaving of a boy's hair were performed, visitors cheered and
+                greatly enjoyed the ancient and traditional Genpuku Ceremony.</p>
+        </div>
+        <div class="event_item_wrapper jan">
+            <h2 class="event-title content-jp">奉射祭</h2>
+            <h2 class="event-title content-en">Hosha-sai</h2>
+            <p class="e-date content-jp">1月12日</p>
+            <p class="e-date content-en">January 12</p>
+            <p class="timeplace content-jp">14:00 ~ 神苑斎場</p>
+            <p class="timeplace content-en">2:00 P.M. ~ / Next to Senbon-Torii</p>
+            <p class="e-detail content-jp">
+                伏見稲荷大社では、毎年1月12日に「奉射祭」と呼ばれる年頭にあたって邪気や陰気を祓い陽気を迎える御弓始神事が行われます。本殿での祭典での後、大蛇（おろち）に見立てた巨大な注連縄が飾られた神苑斎場にて副斎主が神矢をもって天地四方を射、続いて神職二名が真矢で大的を射ます。この時の矢の当たり方がその年の五穀の豊凶を占うものといわれており、矢が的の中心を射止めると場内からは大きな歓声が沸きあがりました。
+            </p>
+            <p class="e-detail content-en">At Fushimi Inari Taisha, the "Hosha-sai" is held on January 12 every year to
+                purify the evil spirits and the negative atmosphere at the beginning of the year, and to welcome the
+                positive one.<br>After the ceremony in the main shrine hall, the deputy priests shoot arrows in the four
+                directions of heaven and earth in the shrine garden, which is decorated with a huge shimenawa (sacred
+                rope) resembling a giant serpent.<br>It is said that the way the arrow strikes the target predicts the
+                year's harvest, and when the arrow hits the center of the target, the audience erupts in cheers.</p>
+        </div>
+        <div class="event_item_wrapper feb">
+            <h2 class="event-title content-jp">節分祭</h2>
+            <h2 class="event-title content-en">Setsubun-sai</h2>
+            <p class="e-date content-jp">2月節分の日</p>
+            <p class="e-date content-en">February 1</p>
+            <p class="timeplace content-jp">9:00 ~ / 外拝殿</p>
+            <p class="timeplace content-en">9:00 P.M. ~ / Ge-haiden</p>
+            <p class="e-detail content-jp">
+                毎年2月3日、ここ伏見稲荷大社では「節分祭」が開催され、「五穀豊穣」「商売繁盛」「家内安全」などのご利益があると言われている「福豆」を手に入れようと多くの参拝客が訪れます。豆まき行事は祭典終了後と11:30・13:00の計3回、外拝殿において福男福女および福娘によって行われます。豆まきの会場は非常に混雑いたしますが、警護所の前では手渡しによる福豆の配布も行っていますので、小さいお子様連れや高齢者の方でも安心してご参加いただけます。
+            </p>
+            <p class="e-detail content-en">Every year on February 3, the Setsubun-sai is held at Fushimi Inari Taisha
+                Shrine, attracting many worshippers to obtain "fuku-mame" (lucky beans), which are said to bring good
+                luck for a good harvest, prosperous business, and family safety.<br>The bean-throwing event is held
+                three times, after the ceremony and at 11:30 and 13:00, at the outer hall of the shrine by a "lucky
+                man/woman" and a "lucky girl.<br>Although the bean-throwing ceremony can be very crowded, the beans are
+                distributed by hand in front of the guard station, so that even small children and the elderly can
+                participate without anxiety.</p>
+        </div>
+        <div class="event_item_wrapper feb">
+            <h2 class="event-title content-jp">初午大祭</h2>
+            <h2 class="event-title content-en">Hatsuuma Taisai</h2>
+            <p class="e-date content-jp">2月初午の日</p>
+            <p class="e-date content-en">First Day of the Horse (according to the traditional calendar, where each day
+                is named after one of the animals in the Asian zodiac)</p>
+            <p class="timeplace content-jp">8:00 ~ / 御膳谷奉拝所</p>
+            <p class="timeplace content-en">8:00 A.M. ~ / Gozendani Hohaisho</p>
+            <p class="e-detail content-jp">
+                「初午（はつうま）」とは2月に入ってからいちばん最初の「午の日」のことを指し、全国の稲荷社ではこの日を祭日と定めています。伏見稲荷大社では、この日に大神の広大無辺なるご神威を仰ぎ奉るお祭りである「初午大祭（はつうまたいさい）」が開催されます。初午詣は「福詣」とも呼ばれ、前日の巳の日からご社頭はおおよそ10万人もの参拝者で埋まり、京洛初春第一の祭事としても有名です。また社頭で参拝者に授与される「しるしの杉」は商売繁盛・家内安全の御符として、古くから拝受する風習が盛んです。
+            </p>
+            <p class="e-detail content-en">Hatsuuma" is the first day of February, and all Inari shrines throughout
+                Japan observe this day as a national holiday.<br>At Fushimi Inari Taisha, the "Hatsuuma Taisai" festival
+                is held on this day to worship the immense and boundless divine power of the great
+                deity.<br>Hatsuuma-mairi is also called "Fuku-mairi," and the shrine is filled with approximately
+                100,000 worshippers from the day before the Snake Festival, making it the first festival in the early
+                spring in Kyoto.<br>The "Shirushi-no-Sugi" (sign of the cedar), which is given to worshippers at the
+                shrine, is a talisman for prosperous business and family safety, and has been widely accepted since
+                ancient times.</p>
+        </div>
+        <div class="event_item_wrapper apr">
+            <h2 class="event-title content-jp">献花祭</h2>
+            <h2 class="event-title content-en">Kenka-sai</h2>
+            <p class="e-date content-jp">4月1日</p>
+            <p class="e-date content-en">April 1</p>
+            <p class="timeplace content-jp">11:00 ~ / 外拝殿</p>
+            <p class="timeplace content-en">11:00 A.M. ~ / Ge-haiden</p>
+            <p class="e-detail content-jp">
+                毎年4月1日と11月1日、伏見稲荷大社では「献花祭」が執り行われます。外拝殿においては、4月は華道家元池坊京都支部が、11月は嵯峨御所大覚寺御流華道総司所の奉仕による献花の儀が行われ、祭壇では祝詞奏上と巫女神楽が行われます。春と秋、それぞれの季節を彩る献花からは平安時代から脈々と伝わる華道の真髄を感じると共に、京都という町の重厚な歴史や、日本が磨き上げてきた伝統的な美的理念である「雅」を感じることができるでしょう。
+            </p>
+            <p class="e-detail content-en">Every year on April 1 and November 1, the Fushimi Inari Taisha Shrine holds
+                the "Flower Offering Ceremony".<br>In April, the Kyoto branch of the Iemoto Ikenobo flower arrangement
+                school performs the flower offering ceremony at the outer sanctuary, and in November, the Saga Gosho
+                Daikakuji Temple's Goryu flower arrangement school performs the flower offering ceremony at the
+                altar.<br>The flower offerings in the spring and fall, each season in its own colorful way, will allow
+                visitors to experience the essence of flower arrangement that has been passed down from generation to
+                generation since the Heian period, as well as the rich history of Kyoto and the traditional aesthetic
+                philosophy of "elegance" that Japan has refined over the centuries.</p>
+        </div>
+        <div class="event_item_wrapper apr">
+            <h2 class="event-title content-jp">献茶祭</h2>
+            <h2 class="event-title content-en">Kencha-sai</h2>
+            <p class="e-date content-jp">4月 産業祭当日</p>
+            <p class="e-date content-en">April: The day of the "Sangyo-sai"</p>
+            <p class="timeplace content-jp">10:00 ~ / 神楽殿</p>
+            <p class="timeplace content-en">10:00 A.M. ~ / Kaguraden</p>
+            <p class="e-detail content-jp">
+                この献茶式は大正3年(1914)に11代家元透月斎竹窓によって創始された献茶式です。「産業祭」と呼ばれる衣食住の神様であるごご祭神の神恩に感謝し、各種の産業の発展を祈願する祭礼に合わせ、お家元がお献茶をされます。
+            </p>
+            <p class="e-detail content-en">This tea ceremony was founded in 1914 by the 11th Iemoto, Sugetsusai
+                Chikumado.<br>The tea ceremony is held in conjunction with the "Sangyo-sai," a festival to express
+                gratitude to the gods of food, clothing, and shelter, and to pray for the development of various
+                industries.</p>
+        </div>
+        <div class="event_item_wrapper apr">
+            <h2 class="event-title content-jp">産業祭</h2>
+            <h2 class="event-title content-en">Sangyo-sai</h2>
+            <p class="e-date content-jp">4月8日 付近の日曜日</p>
+            <p class="e-date content-en">April 8</p>
+            <p class="timeplace content-jp">11:00 ~</p>
+            <p class="timeplace content-en">11:00 A.M. ~ </p>
+            <p class="e-detail content-jp">
+                伏見稲荷大社の「産業祭」は毎年4月8日付近の日曜日に実施されるお祭りです。このお祭は、衣食住の太祖でありあらゆる産業の守護神である稲荷大神の日頃のご神恩に感謝し、産業が益々発展、興隆するよう祈願するものです。神前には全国産業界から優秀な製品が奉納され、境内では神楽女による「桜花舞」が奏され、終日華やかな雰囲気に染まります。当日の午前中には、古儀茶道薮内流奉仕による「献茶祭」も開催されます。
+            </p>
+            <p class="e-detail content-en">Sangyo-sai of Fushimi Inari Taisha is held every year on a Sunday around
+                April 8.<br>This festival is held to express gratitude to Inari, the ancestor of food, clothing, and
+                shelter, and the patron god of all industries, and to pray for the continued development and prosperity
+                of industry.<br>The shrine is dedicated to the best products from industries all over Japan, and the
+                precincts of the shrine are decorated with "sakurahana-mai" (cherry blossom dance) performed by kagura
+                girls, creating a spectacular atmosphere throughout the day.<br>In the morning of the day, a "tea
+                offering ceremony" will be held by the Kogi Tea Ceremony Yabuuchi-ryu service.</p>
+        </div>
+        <div class="event_item_wrapper apr">
+            <h2 class="event-title content-jp">水口播種祭</h2>
+            <h2 class="event-title content-en">Minakuchi Hashu-sai</h2>
+            <p class="e-date content-jp">4月12日</p>
+            <p class="e-date content-en">April 12</p>
+            <p class="timeplace content-jp">11:00 ~ / 境内 神田</p>
+            <p class="timeplace content-en">11:00 A.M. ~ / Precincts Shinden（Rice paddies of shrines）</p>
+            <p class="e-detail content-jp">伏見稲荷大社の主祭神・宇迦之御魂神うかのみたまのかみは穀物の神様です。神田ではシンボルとも言うべき稲が育てられ、春から秋にかけて3回神事が行われます。
+            </p>
+            <p class="e-detail content-en">The main deity of Fushimi Inari Taisha, Ukanomitama no Kami, is the god of
+                grain.<br>Rice, the symbol of the shrine, is grown in the Kanda area, where Shinto rituals are held
+                three times from spring to autumn.</p>
+        </div>
+        <div class="event_item_wrapper apr">
+            <h2 class="event-title content-jp">稲荷祭（神幸祭）</h2>
+            <h2 class="event-title content-en">Inari-sai, Shinko-sai</h2>
+            <p class="e-date content-jp">4月20日 付近の日曜日</p>
+            <p class="e-date content-en">Sunday around April 20</p>
+            <p class="timeplace content-jp">11:00 ~ / 神楽殿</p>
+            <p class="timeplace content-en">11:00 A.M. ~ / Kaguraden</p>
+            <p class="e-detail content-jp">稲荷大神が年に一度、氏子区域を巡幸します。五基の神輿が14時に出発し、京都駅近く（西九条）の御旅所へやって来て、還幸祭まで奉安殿に駐興されます。</p>
+            <p class="e-detail content-en">Once a year, Inari-O-no-Mikoshi makes a pilgrimage through the Ujiko
+                area.<br>Five portable shrines depart at 2:00 p.m. and come to the Otabisho near Kyoto Station
+                (Nishi-Kujo), where they are parked until the Kanko-sai.</p>
+        </div>
+        <div class="event_item_wrapper apr">
+            <h2 class="event-title content-jp">稲荷祭（区内巡幸）</h2>
+            <h2 class="event-title content-en">Inari-sai, Kunai-Junkou</h2>
+            <p class="e-date content-jp">4月下旬</p>
+            <p class="e-date content-en">Late April</p>
+            <p class="timeplace content-jp">11:00 ~ / 各氏子区内</p>
+            <p class="timeplace content-en">11:00 A.M. ~ / Pilgrimage</p>
+            <p class="e-detail content-jp">この期間、御旅所には５基のおみこしが氏子の住む地域を周ります。・田中社（不動堂）・上社（東九条）・下社（塩小路・中堂寺）・中社（西九条）・四之大神（八条）
+            </p>
+            <p class="e-detail content-en">During this period, five omikoshi (portable shrines) go around the area where
+                Ujiko live.<br>Tanaka Shrine (Fudo-do), Kamisha (Higashi Kujo), Shimo-sha (Shiokoji and Chudoji), Naka
+                Shrine (Nishi-Kujo), and Yono-Ojin (Hachijo)</p>
+        </div>
+        <div class="event_item_wrapper may">
+            <h2 class="event-title content-jp">稲荷祭（還幸祭）</h2>
+            <h2 class="event-title content-en">Inari-sai, Kanko-sai</h2>
+            <p class="e-date content-jp">5月3日</p>
+            <p class="e-date content-en">May 3</p>
+            <p class="timeplace content-jp">16:00 ~ / 本殿</p>
+            <p class="timeplace content-en">4:00 P.M. ~ / Main Shrine</p>
+            <p class="e-detail content-jp">
+                伏見稲荷の稲荷祭は毎年4月20日頃より行われ、5月3日に行われるこの「還幸祭」でクライマックスを迎えます。4月の神幸祭で御旅所におとどまりされていた稲荷大神様が伏見稲荷大社へ戻るのが「還幸祭」です。美しく飾られた30数台の供奉列奉賛列を従えた5基の神輿は、途中東寺の僧侶による「神供」を受けたあと約2時間にわたり京都市内の氏子区域を巡航した後ご本社に到着します。引き続き神輿よりご神璽が本殿へ奉遷され、無事の還御を称えます。翌4日は後宮祭が本殿において斎行され、約2週間におよぶ稲荷祭りは終了します。
+            </p>
+            <p class="e-detail content-en">Inari-sai of Fushimi Inari is held every year from around April 20,
+                culminating in the "Kanko-sai" on May 3, when the deity Inari returns to the Fushimi Inari Taisha Shrine
+                after being entrained at the Otabisho during the April Shinko-sai.<br>Five beautifully decorated
+                portable shrines, each accompanied by a procession of more than 30 offerings, receive a "shinmyo" from a
+                priest of Toji Temple on the way to the shrine, then cruise for about two hours through the Ujiko
+                district of Kyoto City before arriving at the shrine's headquarters.<br>The portable shrine is then
+                returned to the main shrine to celebrate the safe return of the deity to the shrine.<br>On the following
+                day, the 4th, the Gomiya Festival is held at the main shrine, bringing the two-week Inari-sai to a
+                close.</p>
+        </div>
+        <div class="event_item_wrapper jun">
+            <h2 class="event-title content-jp">田植祭</h2>
+            <h2 class="event-title content-en">Taue-sai</h2>
+            <p class="e-date content-jp">6月10日</p>
+            <p class="e-date content-en">June 10</p>
+            <p class="timeplace content-jp">13:00 ~ / 境内 神田</p>
+            <p class="timeplace content-en">1:00 P.M. ~ / Precincts Shinden（Rice paddies of shrines）</p>
+            <p class="e-detail content-jp">
+                伏見稲荷大社では春から秋にかけて、計5回もの「稲」に関する神事が行われています。「田植祭」は毎年6月10日、ご神前に日々供饌されるご料米の稲苗を神田に植える神事です。本殿での神事が終わると神官は神田へと移動し、王朝をしのばせる典雅な「御田舞」が奏される中を菅笠姿の早乙女らによって田植えがすすめられます。神田のまわりには多くの観光客が集まり、早乙女の姿をカメラに収めようとするシャッターの音があたりに響き渡ります。
+            </p>
+            <p class="e-detail content-en">At Fushimi Inari Taisha, a total of five Shinto rituals related to rice are
+                held from spring to autumn.<br>The "Rice Planting Ceremony" is held on June 10 each year to plant rice
+                seedlings in the rice paddy, which is offered daily to the deity.<br>After the Shinto ritual at the main
+                shrine, the priests move to the rice field, where Saotome (maiden maidens) dressed in Sugahasa hats
+                plant rice while the elegant "Ota-mai" (rice field dance) is performed, reminiscent of the imperial
+                court.<br>Many tourists gather around the Kanda, and the sound of shutters echoing around the area as
+                they try to capture the Saotome women with their cameras.</p>
+        </div>
+        <div class="event_item_wrapper jun">
+            <h2 class="event-title content-jp">大祓式</h2>
+            <h2 class="event-title content-en">Oharae-shiki</h2>
+            <p class="e-date content-jp">6月30日</p>
+            <p class="e-date content-en">June 30</p>
+            <p class="timeplace content-jp">15:00 ~ / 本殿</p>
+            <p class="timeplace content-en">3:00 P.M. ~ / Main Shrine</p>
+            <p class="e-detail content-jp">知らず知らずのうちに犯しているかもしれない罪・穢れを祓い清めて形代を河海に流す行事です。式の後、宮司以下の神職及び参列者一同は茅の輪をくぐります。</p>
+            <p class="e-detail content-en">This is an event to purify the body of sins and defilements that may have
+                been committed unknowingly, and to throw the object of worship into the river sea.<br>After the
+                ceremony, the priest and all attendees pass through a straw ring.</p>
+        </div>
+        <div class="event_item_wrapper jul">
+            <h2 class="event-title content-jp">本宮祭</h2>
+            <h2 class="event-title content-en">Motomiya-sai</h2>
+            <p class="e-date content-jp">「宵宮祭」 7月本宮祭の前日</p>
+            <p class="timeplace content-jp">18:00 ~ / 稲荷山をはじめ境内の全域</p>
+            <p class="e-date content-jp">「本宮祭」 7月土用入後初の日曜又は祝日</p>
+            <p class="timeplace content-jp">9:00 ~ / 稲荷山をはじめ境内の全域</p>
+            <p class="e-date content-en">「Yoimiya-sai」 The day before the July "Motomiya-sai"</p>
+            <p class="timeplace content-en">6:00 P.M. ~ / Inariyama, the entire precincts of the temple.</p>
+            <p class="e-date content-en">「Motomiya-sai」 first Sunday or holiday in July after Doyo</p>
+            <p class="timeplace content-en">9:00 A.M. ~ / Inariyama, the entire precincts of the temple.</p>
+            <p class="e-detail content-jp">
+                年間を通して数多くのお祭りが催される伏見稲荷大社の中でも、最も規模の大きなお祭りが「本宮祭」。稲荷大神のご分霊を祀る全国の崇敬者が総本宮に参拝し、日々の御神恩に感謝する大祭です。境内はもちろん駅から続く参道には数千もの提灯が飾られ、辺り一帯は幻想的で鮮やかな朱色に彩られます。そして、もう一つの名物は「狐のお面」。フォトスポットの千本鳥居と共に、写真を撮る人々の欠かせないアイテムとなっています。また、外拝殿及びその周辺では日本画家たちが奉納した行灯画が数百点展観され、祭りの雰囲気に華をそえています。
+            </p>
+            <p class="e-detail content-en">Of the many festivals held throughout the year at Fushimi Inari Taisha, the
+                Motomiya-sai is the largest in scale.<br>This festival is a great occasion for worshippers from all over
+                Japan, who worship the spirit of Inari, to worship at the main shrine and express their gratitude for
+                the daily blessings of the gods.<br>The grounds of the shrine as well as the approach leading from the
+                station are decorated with thousands of lanterns, and the entire area is painted in a fantastic and
+                vivid vermilion color.<br>Another famous feature of the festival is the "fox masks.<br>Along with the
+                Senbon-torii, a photo spot, these masks are an indispensable item for people taking pictures.<br>In
+                addition, hundreds of lantern paintings dedicated by Japanese painters are displayed in and around the
+                outer shrine, adding to the festive atmosphere.</p>
+        </div>
+        <div class="event_item_wrapper oct">
+            <h2 class="event-title content-jp">構員大祭</h2>
+            <h2 class="event-title content-en">Koin Taisai</h2>
+            <p class="e-date content-jp">10月体育の日の前々日 第1日<br>10月体育の日の前日 第2日</p>
+            <p class="e-date content-en">Two days before October's gymnastic day<br>One day before the October Physical
+                Education Day</p>
+            <p class="timeplace content-jp">13:00 ~ / 境内</p>
+            <p class="timeplace content-en">1:00 P.M. ~ / Precincts</p>
+            <p class="e-detail content-jp">伏見稲荷大社の信仰団体の講務本庁の講員が、家内安全・生業繁栄を祈願するお祭で、全国の講員が参拝、境内では盛りだくさんの神賑行事が繰り広げられます。</p>
+            <p class="e-detail content-en">This is a festival where members of the Fushimi Inari Taisha faith community
+                pray for the safety of their families and prosperity of their businesses.</p>
+        </div>
+        <div class="event_item_wrapper oct">
+            <h2 class="event-title content-jp"> 献茶祭</h2>
+            <h2 class="event-title content-en">Kencha-sai</h2>
+            <p class="e-date content-jp">10月24日</p>
+            <p class="e-date content-en">October 24</p>
+            <p class="timeplace content-jp">10:00 ~ / 本殿</p>
+            <p class="timeplace content-en">10:00 A.M. ~ / Main Shrine</p>
+            <p class="e-detail content-jp">
+                献茶祭は茶道・裏千家家元による奉仕で行われます。献茶祭では濃茶（おこい）・薄茶（おうす）が神前に献じられます。なお献茶祭では御茶屋（重要文化財）などに茶席が設けられます。</p>
+            <p class="e-detail content-en">The tea ceremony is performed by the head of the Urasenke school of tea
+                ceremony.<br>The tea ceremony is performed by the head of the Urasenke school of tea ceremony.<br>Tea
+                ceremonies are held at the Ochaya (an important cultural property) and other tea ceremony sites.</p>
+        </div>
+        <div class="event_item_wrapper oct">
+            <h2 class="event-title content-jp">抜穂祭</h2>
+            <h2 class="event-title content-en">Nukiho-sai</h2>
+            <p class="e-date content-jp">10月25日</p>
+            <p class="e-date content-en">October 25</p>
+            <p class="timeplace content-jp">11:00 ~ / 本殿</p>
+            <p class="timeplace content-en">11:00 A.M. ~ / Main Shrine</p>
+            <p class="e-detail content-jp">
+                豊かに稔った稲穂を刈り取るお祭りです。神楽女により「稲穂舞」が舞われる中で行われます。刈り取られた稲は、11月23日の新嘗祭に大神にお供えされ、稲藁は火焚祭に焚き上げられます。</p>
+            <p class="e-detail content-en">This festival is held to reap the rich harvest of rice.<br>The festival is
+                held amidst the dancing of "Inaho Mai" (rice ear dance) by Kagurajo (female Shinto music and dance
+                performers).<br>The harvested rice is offered to the deity on November 23 during the Niiname-sai, and
+                the rice straw is burned during the Hitaki-sai</p>
+        </div>
+        <div class="event_item_wrapper nov">
+            <h2 class="event-title content-jp">献花祭</h2>
+            <h2 class="event-title content-en">Kenka-sai</h2>
+            <p class="e-date content-jp">11月1日</p>
+            <p class="e-date content-en">November 1</p>
+            <p class="timeplace content-jp">11:00 ~ / 外拝殿</p>
+            <p class="timeplace content-en">11:00 A.M. ~ / Ge-haiden</p>
+            <p class="e-detail content-jp">
+                伏見稲荷大社の外拝殿において、献花祭が斎行されます。嵯峨御流華道総司所の奉仕による献花の儀が行われます。本殿背後にある「千本鳥居」は人気のスポットで、鮮やかな朱色の鳥居のトンネルをくぐることができます。
+            </p>
+            <p class="e-detail content-en">A flower offering ceremony will be held at the outer shrine of Fushimi Inari
+                Taisha.<br>The flower offering ceremony is performed by the Sagano-ryu Flower Arrangement Office.<br>The
+                "Senbon-torii" behind the main shrine building is a popular spot where visitors can pass through a
+                tunnel of brightly colored vermilion torii gates.</p>
+        </div>
+        <div class="event_item_wrapper nov">
+            <h2 class="event-title content-jp">火焚祭</h2>
+            <h2 class="event-title content-en">Hitaki-sai</h2>
+            <p class="e-date content-jp">11月8日</p>
+            <p class="e-date content-en">November 8</p>
+            <p class="timeplace content-jp">13:00 ~ / 本殿</p>
+            <p class="timeplace content-en">1:00 P.M. ~ / Main Shrine</p>
+            <p class="e-detail content-jp">
+                火焚祭は今年一年間の収穫に感謝する行事で、伏見稲荷大社のものは全国一のスケールで、立ち上る炎に圧倒されます。本殿の儀のあと、火焚きの儀が行わます。本殿裏手の斎場に3基の火床を設け、神田でとれた稲のわらを燃やし、恵みをもたらしてくれた神を山に送ります。その際、全国から寄せられた10数万本の願い事が書かれた火焚串を焚き、神楽女の神楽舞が行われます。特に後半が見所です。雨天決行。
+            </p>
+            <p class="e-detail content-en">The Hitaki-sai is an event to give thanks for the year's harvest, and the one
+                at Fushimi Inari Taisha is the largest in Japan, and the flames rising from the flames are
+                overwhelming.<br>After the main shrine ceremony, the fire-burning ceremony is held.<br>Three fire pits
+                are set up in the sanctuary behind the main shrine building, and rice straw from the Kanda field is
+                burned to send the god who brought blessings to the mountain.<br>At that time, fire sticks with more
+                than 100,000 wishes written on them are burned, and a kagura dance is performed by kagura women.<br>The
+                second half of the festival is a highlight.<br>The festival will be held rain or shine.</p>
+        </div>
+        <div class="event_item_wrapper nov">
+            <h2 class="event-title content-jp">御神楽</h2>
+            <h2 class="event-title content-en">Mikagura</h2>
+            <p class="e-date content-jp">11月8日</p>
+            <p class="e-date content-en">November 8</p>
+            <p class="timeplace content-jp">18:00 ~ / 本殿</p>
+            <p class="timeplace content-en">6:00 P.M. ~ / Main Shrine</p>
+            <p class="e-detail content-jp">
+                火焚祭が終わった後、18時から本殿前庭で御神楽が行われます。古の鎮魂祭にもとづく神事です。一時中絶されていましたが、孝明天皇の時代に再興。現在は、伏見稲荷大社の職員によって奉仕されています。この神事で舞われる「人長舞（にんじょうまい）」。人気が高く、毎年楽しみにしている方もいる程です。かがり火の薄い明りの中に響く、本歌・末歌・和琴・笛・ひちりき。そして、早韓神の歌。その空間で人長舞を舞う神楽人の長。
+            </p>
+            <p class="e-detail content-en">After the Hitaki-sai is over, the Mikagura (Shinto music and dance) will be
+                performed in the front yard of the main shrine from 6:00 p.m. This ritual is based on an ancient requiem
+                ceremony.<br>It was discontinued for a time, but was revived during the reign of Emperor Komei.<br>At
+                present, it is performed by the staff of Fushimi Inari Taisha.<br>The "Ninjo Mai" is performed during
+                this ritual.<br>It is so popular that some people look forward to it every year.<br>The main song, the
+                last song, the Japanese harp, the flute, and the hichiriki echo in the dim light of the bonfire.<br>And
+                the song of the god Hayakan.<br>The head of the Kagurajin who performs the Jincho Mai in that space.</p>
+        </div>
+        <div class="event_item_wrapper nov">
+            <h2 class="event-title content-jp">新嘗祭</h2>
+            <h2 class="event-title content-en">Shinjo-sai</h2>
+            <p class="e-date content-jp">11月23日</p>
+            <p class="e-date content-en">November 23</p>
+            <p class="timeplace content-jp">10:00 ~ / 本殿</p>
+            <p class="timeplace content-en">10:00 A.M. ~ / Main Shrine</p>
+            <p class="e-detail content-jp">10月25日の抜穂祭で刈り取られた新穀を神前に供え、「新嘗祭」が行われます。今年の豊作を感謝するとともに、国家の平安を祈念します。</p>
+            <p class="e-detail content-en">On October 25, new grains harvested at the Nukiho-sai are offered to the gods
+                in the "Niiname-sai" ceremony.<br>The ceremony is held to express gratitude for this year's bountiful
+                harvest and to pray for the peace and prosperity of the nation.</p>
+        </div>
+        <div class="event_item_wrapper dec">
+            <h2 class="event-title content-jp">大祓式</h2>
+            <h2 class="event-title content-en">Oharae-shiki</h2>
+            <p class="e-date content-jp">12月31日</p>
+            <p class="e-date content-en">December 1</p>
+            <p class="timeplace content-jp">15:00 ~ / 本殿</p>
+            <p class="timeplace content-en">3:00 P.M. ~ / Main Shrine</p>
+            <p class="e-detail content-jp">
+                大祓式では形代を河海に流し、知らず知らずの内に犯している罪や穢れを祓い清めます。大祓式後には稲荷大神の守護によって一年間無事に過ごせたことを感謝する除夜祭が行われます。</p>
+            <p class="e-detail content-en">During the purification ceremony, the "katashiro" is washed into the river
+                and the sea to purify the body of sins and impurities that have been unknowingly committed.<br>After the
+                purification ceremony, the festival is followed by the Yakiyasai, a ceremony to express gratitude to
+                Inari no Mikami for the safe passage of the year.</p>
+        </div>
+    </section>
+    <footer>
+        <div class="ft-nav">
+            <div class="ft-item"></a>
+                <li><a href="./index.html#kanko" class="content-jp">観光名所</li></a>
+                <li><a href="./event.html" class="content-jp">祭礼・行事</li></a>
+                <li><a href="./news.html" class="content-jp">お知らせ</li></a>
+                <li><a href="./index.html#kanko" class="content-en">Tourist Attraction</li></a>
+                <li><a href="./event.html" class="content-en">Events</li></a>
+                <li><a href="./news.html" class="content-en">Notice</li></a>
+            </div>
+            <div class="ft-item">
+                <li><a href="./access.html" class="content-jp">アクセス</li></a>
+                <li><a href="./form.html" class="content-jp">お問い合わせ</li></a>
+                <li><a href="./index.html" class="content-jp">プライバシーポリシー</li></a>
+                <li><a href="./access.html" class="content-en">Access</li></a>
+                <li><a href="./form.html" class="content-en">Contact us</li></a>
+                <li><a href="./index.html" class="content-en">Privacy Policy</li></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright&copy;Fushimi Inari Taisha</p>
+        </div>
+    </footer>
+</body>
+<script src="./js/event.js"></script>
+<script src="./js/hamburger.js"></script>
+
+</html>

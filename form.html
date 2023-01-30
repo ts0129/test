@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伏見稲荷大社 | お問い合わせ</title>
+    <link rel="website icon" type="png" href="./image/design.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="./js/cookie.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="nav-wrapper">
+            <div class="logo"><a href="./index.html"><img src="./image/スクリーンショット 2022-12-21 10.47.03.png" alt=""></a>
+            </div>
+            <nav>
+                <div class="btn-lang">
+                    <a href="./form.html" id="enbt" data-siteview="en" class="en">EN</a> / <a href="./form.html"
+                        id="jpbt" data-siteview="jp" class="jp">JP</a>
+                </div>
+                <div class="sp_none">
+                    <a href="./index.html#kanko" class="content-jp">観光名所</a>
+                    <a href="./index.html#kanko" class="content-en">Tourist Attraction</a>
+                </div>
+                <div class="sp_none">
+                    <a href="./event.html" class="content-jp">祭礼・行事</a>
+                    <a href="./event.html" class="content-en">Events</a>
+                </div>
+                <div class="sp_none">
+                    <a href="./news.html" class="content-jp">お知らせ</a>
+                    <a href="./news.html" class="content-en">Notice</a>
+                </div>
+                <div class="sp_none">
+                    <a href="./access.html" class="content-jp">アクセス</a>
+                    <a href="./access.html" class="content-en">Access</a>
+                </div>
+                <div class="sp_none">
+                    <a href="./form.html" class="content-jp">お問い合わせ</a>
+                    <a href="./form.html" class="content-en">Contact us</a>
+                </div>
+            </nav>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="globalMenuSp">
+            <ul>
+                <li><a href="./index.html#kanko" class="ham_bt content-jp">観光名所</a></li>
+                <li><a href="./index.html#kanko" class="ham_bt content-en">Tourist Attraction</a></li>
+                <li><a href="./event.html" class="ham_bt content-jp">祭礼・行事</a></li>
+                <li><a href="./event.html" class="ham_bt content-en">Event</a></li>
+                <li><a href="./index.html#news" class="ham_bt content-jp">お知らせ</a></li>
+                <li><a href="./index.html#news" class="ham_bt content-en">Notice</a></li>
+                <li><a href="./access.html" class="ham_bt content-jp">アクセス</a></li>
+                <li><a href="./access.html" class="ham_bt content-en">Access</a></li>
+                <li><a href="./form.html" class="ham_bt content-jp">お問い合わせ</a></li>
+                <li><a href="./form.html" class="ham_bt content-en">Contact us</a></li>
+                <li><a href="./index.html" class="ham_bt content-jp">プライバシーポリシー</a></li>
+                <li><a href="./index.html" class="ham_bt content-en">Privacy Policy</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="form-wrapper">
+        <h2 class="form-title content-jp">お問い合わせ</h2>
+        <h2 class="form-title content-en">Contact us</h2>
+        <div class="Form">
+            <div class="Form-Item">
+                <p class="Form-Item-Label content-jp"><span class="Form-Item-Label-Required">必須</span>お名前</p>
+                <p class="Form-Item-Label content-en"><span
+                        class="Form-Item-Label-Required formen">Indispensable</span>Name</p>
+                <input type="text" class="Form-Item-Input content-jp" placeholder="例）山田太郎">
+                <input type="text" class="Form-Item-Input content-en" placeholder="ex.）John Smith">
+            </div>
+            <div class="Form-Item">
+                <p class="Form-Item-Label content-jp"><span class="Form-Item-Label-Required">必須</span>電話番号</p>
+                <p class="Form-Item-Label content-en"><span
+                        class="Form-Item-Label-Required formen">Indispensable</span>TEL</p>
+                <input type="text" class="Form-Item-Input content-jp" placeholder="例）XXX-XXX-XXXX">
+                <input type="text" class="Form-Item-Input content-en" placeholder="ex.）XX XX XX XXXX XXXX">
+            </div>
+            <div class="Form-Item">
+                <p class="Form-Item-Label content-jp"><span class="Form-Item-Label-Required">必須</span>メールアドレス</p>
+                <p class="Form-Item-Label content-en"><span
+                        class="Form-Item-Label-Required formen">Indispensable</span>Mail</p>
+                <input type="email" class="Form-Item-Input content-jp" placeholder="例）example@gmail.com">
+                <input type="email" class="Form-Item-Input content-en" placeholder="ex.）example@XXXXXX.com">
+            </div>
+            <div class="Form-Item">
+                <p class="Form-Item-Label isMsg content-jp"><span class="Form-Item-Label-Required">必須</span>お問い合わせ内容</p>
+                <p class="Form-Item-Label isMsg content-en"><span
+                        class="Form-Item-Label-Required formen">Indispensable</span>Inquiry Details</p>
+                <textarea class="Form-Item-Textarea"></textarea>
+            </div>
+            <input type="submit" class="Form-Btn content-jp" value="送信する">
+            <input type="submit" class="Form-Btn content-en" value="Send">
+        </div>
+    </div>
+    <footer>
+        <div class="ft-nav">
+            <div class="ft-item"></a>
+                <li><a href="./index.html#kanko" class="content-jp">観光名所</li></a>
+                <li><a href="./event.html" class="content-jp">祭礼・行事</li></a>
+                <li><a href="./news.html" class="content-jp">お知らせ</li></a>
+                <li><a href="./index.html#kanko" class="content-en">Tourist Attraction</li></a>
+                <li><a href="./event.html" class="content-en">Events</li></a>
+                <li><a href="./news.html" class="content-en">Notice</li></a>
+            </div>
+            <div class="ft-item">
+                <li><a href="./access.html" class="content-jp">アクセス</li></a>
+                <li><a href="./form.html" class="content-jp">お問い合わせ</li></a>
+                <li><a href="./index.html" class="content-jp">プライバシーポリシー</li></a>
+                <li><a href="./access.html" class="content-en">Access</li></a>
+                <li><a href="./form.html" class="content-en">Contact us</li></a>
+                <li><a href="./index.html" class="content-en">Privacy Policy</li></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright&copy;Fushimi Inari Taisha</p>
+        </div>
+    </footer>
+</body>
+<script src="./js/hamburger.js"></script>
+
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伏見稲荷大社</title>
+    <link rel="website icon" type="png" href="./image/design.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="./js/cookie.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="nav-wrapper">
+            <div class="logo"><a href="./index.html"><img src="./image/スクリーンショット 2022-12-21 10.47.03.png" alt=""></a>
+            </div>
+            <nav>
+                <div class="btn-lang">
+                    <a href="./index.html" id="enbt" data-siteview="en" class="en">EN</a> /
+                    <a href="./index.html" id="jpbt" data-siteview="jp" class="jp">JP</a>
+                </div>
+                <div class="sp_none">
+                    <a href="#kanko" class="content-jp" onclick="btn_tour">観光名所</a>
+                    <a href="#kanko" class="content-en" onclick="btn_tour">Tourist Attraction</a>
+                </div>
+                <div class="sp_none">
+                    <a href="#event" class="content-jp" onclick="btn_tour">祭礼・行事</a>
+                    <a href="#event" class="content-en" onclick="btn_tour">Events</a>
+                </div>
+                <div class="sp_none">
+                    <a href="#news" class="content-jp" onclick="btn_tour">お知らせ</a>
+                    <a href="#news" class="content-en" onclick="btn_tour">Notice</a>
+                </div>
+                <div class="sp_none">
+                    <a href="./access.html" class="content-jp" onclick="btn_tour">アクセス</a>
+                    <a href="./access.html" class="content-en" onclick="btn_tour">Access</a>
+                </div>
+                <div class="sp_none">
+                    <a href="./form.html" class="content-jp" onclick="btn_tour">お問い合わせ</a>
+                    <a href="./form.html" class="content-en" onclick="btn_tour">Contact us</a>
+                </div>
+            </nav>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="globalMenuSp">
+            <ul>
+                <li><a href="./index.html#kanko" class="ham_bt content-jp">観光名所</a></li>
+                <li><a href="./index.html#kanko" class="ham_bt content-en">Tourist Attraction</a></li>
+                <li><a href="./index.html#event" class="ham_bt content-jp">祭礼・行事</a></li>
+                <li><a href="./index.html#event" class="ham_bt content-en">Event</a></li>
+                <li><a href="./index.html#news" class="ham_bt content-jp">お知らせ</a></li>
+                <li><a href="./index.html#news" class="ham_bt content-en">Notice</a></li>
+                <li><a href="./access.html" class="ham_bt content-jp">アクセス</a></li>
+                <li><a href="./access.html" class="ham_bt content-en">Access</a></li>
+                <li><a href="./form.html" class="ham_bt content-jp">お問い合わせ</a></li>
+                <li><a href="./form.html" class="ham_bt content-en">Contact us</a></li>
+                <li><a href="./index.html" class="ham_bt content-jp">プライバシーポリシー</a></li>
+                <li><a href="./index.html" class="ham_bt content-en">Privacy Policy</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="topimg-wrapper">
+        <img src="./image/topimgtest.jpg" alt="">
+        <div class="toptitle-wrapper">
+            <h1 class="toptitle content-jp">伏見稲荷大社</h1>
+            <p class="topsubtitle content-jp">Fushimi Inari Taisha</p>
+            <h1 class="toptitle content-en">Fushimi Inari Taisha</h1>
+            <p class="topsubtitle content-en">伏見稲荷大社</p>
+            <span class="design"><img src="./image/design.png" alt=""></span>
+        </div>
+    </div>
+    <section class="kanko-wrapper" id="kanko">
+        <h2 class="kanko-title content-jp">観光名所</h2>
+        <h2 class="kanko-title content-en">Tourist Attraction</h2>
+        <div class="card-wrapper">
+            <ul class="card-list">
+                <li class="card-item">
+                    <a href="./okusha.html">
+                        <div class="card-title">
+                            <p class="p1 content-jp">奥社奉拝所</p>
+                            <p class="p2 content-jp">Okusha Houhaisho</p>
+                            <p class="p1 content-en">Okusha Houhaisho</p>
+                            <p class="p2 content-en">奥社奉拝所</p>
+                        </div>
+                        <img src="./image/card_item1.jpg" alt="">
+                    </a>
+                </li>
+                <li class="card-item">
+                    <a href="./senbontorii.html">
+                        <div class="card-title">
+                            <p class="p1 content-jp">千本鳥居</p>
+                            <p class="p2 content-jp">Senbon Torii</p>
+                            <p class="p1 content-en">Senbon Torii</p>
+                            <p class="p2 content-en">千本鳥居</p>
+                        </div>
+                        <img src="./image/card_item2.jpg" alt="">
+                    </a>
+                </li>
+                <li class="card-item">
+                    <a href="./inari.html">
+                        <div class="card-title">
+                            <p class="p1 content-jp">稲荷</p>
+                            <p class="p2 content-jp">Oinari-san</p>
+                            <p class="p1 content-en">Oinari-san</p>
+                            <p class="p2 content-en">稲荷</p>
+                        </div>
+                        <img src="./image/card_item3.jpg" alt="">
+                    </a>
+                </li>
+                <li class="card-item">
+                    <a href="./honden.html">
+                        <div class="card-title">
+                            <p class="p1 content-jp">本殿</p>
+                            <p class="p2 content-jp">Main Shrine</p>
+                            <p class="p1 content-en">Main Shrine</p>
+                            <p class="p2 content-en">本殿</p>
+                        </div>
+                        <img src="./image/card_item4.jpg" alt="">
+                    </a>
+                </li>
+                <li class="card-item">
+                    <a href="./ro-mon.html">
+                        <div class="card-title">
+                            <p class="p1 content-jp">楼門</p>
+                            <p class="p2 content-jp">Ro-mon</p>
+                            <p class="p1 content-en">Ro-mon</p>
+                            <p class="p2 content-en">楼門</p>
+                        </div>
+                        <img src="./image/card_item5.jpg" alt="">
+                    </a>
+                </li>
+                <li class="card-item">
+                    <a href="./inarizan.html">
+                        <div class="card-title">
+                            <p class="p1 content-jp">稲荷山</p>
+                            <p class="p2 content-jp">Mt . Inari</p>
+                            <p class="p1 content-en">Mt . Inari</p>
+                            <p class="p2 content-en">稲荷山</p>
+                        </div>
+                        <img src="./image/card_item6.jpg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <div id="event">
+        <section class="event">
+            <div class="event-content">
+                <h2 class="content-jp">祭礼・行事</h2>
+                <h2 class="content-en">Festivals and Events</h2>
+                <p class="content-jp">伏見稲荷大社で行われている、<br>月毎の祭礼や行事をまとめています。<br>ぜひご覧ください。</p>
+                <p class="content-en">Here are the monthly Events<br>held at Fushimi Inari Taisha Shrine.<br>Please take
+                    a look.</p>
+            </div>
+            <p class="bt">
+                <a href="./event.html" class="content-jp">一覧へ</a>
+                <a href="./event.html" class="content-en">More</a>
+            </p>
+        </section>
+    </div>
+    <section class="news" id="news">
+        <h2 class="content-jp">お知らせ</h2>
+        <h2 class="content-en">Notice</h2>
+        <div class="news-detail">
+            <li class="news-item">
+                <p class="date">2022/11/22</p>
+                <p class="content-jp">ふしみいなりライトアップのご案内</p>
+                <p class="content-en">Fushimi Inari Light-up</p>
+            </li>
+            <li class="news-item">
+                <p class="date">2022/10/1</p>
+                <p class="content-jp">令和４年伏見稲荷大社附属講務本庁再発足十周年記念講員大祭神賑のご案内</p>
+                <p class="content-en">The 10th Anniversary of the Re-establishment<br>of the Fushimi Inari Taisha
+                    Annexed Koji Honcho in 2022</p>
+            </li>
+            <li class="news-item">
+                <p class="date">2022/9/25</p>
+                <p class="content-jp">伏見稲荷大社からのお知らせ</p>
+                <p class="content-en">News from Fushimi Inari Taisha</p>
+            </li>
+            <p class="bt2">
+                <a href="./news.html" class="content-jp">一覧へ</a>
+                <a href="./news.html" class="content-en">More</a>
+            </p>
+        </div>
+    </section>
+    <footer>
+        <div class="ft-nav">
+            <div class="ft-item"></a>
+                <li><a href="#kanko" class="content-jp">観光名所</li></a>
+                <li><a href="#event" class="content-jp">祭礼・行事</li></a>
+                <li><a href="#news" class="content-jp">お知らせ</li></a>
+                <li><a href="#kanko" class="content-en">Tourist Attraction</li></a>
+                <li><a href="#event" class="content-en">Events</li></a>
+                <li><a href="#news" class="content-en">Notice</li></a>
+            </div>
+            <div class="ft-item">
+                <li><a href="./access.html" class="content-jp">アクセス</li></a>
+                <li><a href="./form.html" class="content-jp">お問い合わせ</li></a>
+                <li><a href="./index.html" class="content-jp">プライバシーポリシー</li></a>
+                <li><a href="./access.html" class="content-en">Access</li></a>
+                <li><a href="./form.html" class="content-en">Contact us</li></a>
+                <li><a href="./index.html" class="content-en">Privacy Policy</li></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright&copy;Fushimi Inari Taisha</p>
+        </div>
+    </footer>
+</body>
+<script src="./js/hamburger.js"></script>
+
+</html>
